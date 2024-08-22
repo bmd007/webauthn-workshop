@@ -1,7 +1,7 @@
 plugins {
 	id 'java'
 	id 'idea'
-	id 'org.springframework.boot' version '3.3.2'
+	id 'org.springframework.boot' version '3.3.3'
 	id 'io.spring.dependency-management' version '1.1.6'
 }
 
@@ -47,7 +47,7 @@ dependencies {
 	implementation 'com.yubico:webauthn-server-core:2.6.0-alpha6'
 	implementation 'com.yubico:webauthn-server-attestation:2.6.0-alpha6'
 	implementation 'com.yubico:yubico-util:2.6.0-alpha6'
-	implementation 'com.upokecenter:cbor:4.5.5'
+	implementation 'com.upokecenter:cbor:4.5.6'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testImplementation 'io.projectreactor:reactor-test'
 	testImplementation 'org.mockito:mockito-junit-jupiter'
