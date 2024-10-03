@@ -42,7 +42,7 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-webflux'
 	implementation 'org.hibernate.validator:hibernate-validator'
 	compileOnly 'org.projectlombok:lombok'
-	implementation 'com.google.guava:guava:33.3.0-jre'
+	implementation 'com.google.guava:guava:33.3.1-jre'
 	annotationProcessor 'org.projectlombok:lombok'
 	implementation 'com.yubico:webauthn-server-core:2.6.0-alpha7'
 	implementation 'com.yubico:webauthn-server-attestation:2.6.0-alpha7'
