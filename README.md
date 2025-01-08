@@ -36,7 +36,7 @@ The backend is built using Spring Boot.
 - [ ] Contribute to the com.yubico:webauthn-server-core project and suggest improvements regarding use of optional.
 - [ ] Dockerization of the project.
 - [ ] Backend in other languages?
-- [ ] Add a github action to build the components on master
+- [ ] Add a Github action to build the components on master
 
 ## Requirements
 - Java 21 (requires JAVA_HOME to be set
@@ -51,8 +51,10 @@ brew install mkcert
 mkcert -install
 cd react_app/ssl/generated
 mkcert local.bmd007.github.io '*.local.bmd007.github.io' localhost 127.0.0.1 ::1
-#Enter 'password' for the password of keystore:
+
+#Enter 'password' for the password of keystore, as input for the following command:
 openssl pkcs12 -export -in local.bmd007.github.io+4.pem -inkey local.bmd007.github.io+4-key.pem -out keystore.p12 -name localdev
+
 cp keystore.p12 ../../../webauthn-server/src/main/resources/ssl/generated
 ```
 
