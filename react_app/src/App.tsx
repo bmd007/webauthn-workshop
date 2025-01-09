@@ -38,7 +38,7 @@ function App() {
         }
     }
 
-    // only chrome and yubikeys support usernameless and userhandleless login
+    // only chrome and YubiKey support username-less and userhandle-less login
     async function webauthnAuthenticationWithNoUsernameAndNoUserHandle() {
         const authenticateRequestBody = {
             username: null,

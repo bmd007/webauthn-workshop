@@ -39,7 +39,7 @@ The backend is built using Spring Boot.
 - [ ] Add a Github action to build the components on master
 
 ## Requirements
-- Java 21 (requires JAVA_HOME to be set
+- Java 23 (requires JAVA_HOME to be set
 - node 18.17
 - npm 10
 
@@ -56,12 +56,14 @@ mkcert local.bmd007.github.io '*.local.bmd007.github.io' localhost 127.0.0.1 ::1
 openssl pkcs12 -export -in local.bmd007.github.io+4.pem -inkey local.bmd007.github.io+4-key.pem -out keystore.p12 -name localdev
 
 cp keystore.p12 ../../../webauthn-server/src/main/resources/ssl/generated
+cp keystore.p12 ../../../webauthn-server-webauthn4j/src/main/resources/ssl/generated
 ```
 
 ## Starting the applications
 ```shell
-# ports 8080 and 3000 should be free !
+# ports 8080, 9090 and 3000 should be free !
 cd webauthn-server && ./gradlew bootRun
+#cd webauthn-server-webauthn4j && ./gradlew bootRun
 cd ..
 cd react_app && npm start
 ```

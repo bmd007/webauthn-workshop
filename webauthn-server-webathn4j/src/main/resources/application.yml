@@ -1,14 +1,13 @@
 spring:
   application:
     name: webauthn-server
-
 server:
   ssl:
     key-store: "classpath:ssl/generated/keystore.p12"
     key-store-type: "PKCS12"
     key-store-password: "password"
     enabled: true
-  port: 8080
+  port: 9090
 
 ---
 spring:
